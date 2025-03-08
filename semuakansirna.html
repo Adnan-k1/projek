@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="semuakansirna.css">
+</head>
+<body>
+    <div class="playlist-container">
+        <h2>Daftar Lagu</h2>
+        
+        <input type="text" id="search-bar" placeholder="Cari lagu..." />
+
+        <div class="playlist">
+            <div class="song" data-src="Hindia  Janji Palsu Official Lyric Video.mp3">
+                <img src="kita kesana.jpeg" alt="Cover">
+                <div class="song-details">
+                    <div class="song-title">Janji Palsu</div>
+                    <div class="song-artist">Hindia - Lagi Pula Hidup Akan Berakhir</div>
+                </div>
+                <button class="play-button"><img src="play.ppg" alt="Play"></button>
+            </div>
+            
+            <div class="song" data-src="Hindia  Satu Hari Lagi Official Lyric Video.mp3">
+                <img src="kita kesana.jpeg" alt="Cover">
+                <div class="song-details">
+                    <div class="song-title">Satu Hari Lagi</div>
+                    <div class="song-artist">Hindia - Lagi Pula Hidup Akan Berakhir</div>
+                </div>
+                <button class="play-button"><img src="play.png" alt="Play"></button>
+            </div>
+
+            <div class="song" data-src="kita kesana.jpeg">
+                <img src="kita kesana.jpeg" alt="Cover">
+                <div class="song-details">
+                    <div class="song-title">Kita Kesana</div>
+                    <div class="song-artist">Hindia - Kita Kesana</div>
+                </div>
+                <button class="play-button"><img src="play.png" alt="Play"></button>
+            </div>
+
+            <div class="song" data-src="Hindia  Secukupnya Official Lyric  Commentary Video.mp3">
+                <img src="menari dengan bayangan.jpeg" alt="Cover">
+                <div class="song-details">
+                    <div class="song-title">Secukupnya</div>
+                    <div class="song-artist">Hindia - Menari Dengan Bayangan</div>
+                </div>
+                <button class="play-button"><img src="play.png" alt="Play"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Player Tetap di Bawah -->
+    <div class="audio-player-container">
+        <audio id="audio-player" controls></audio>
+    </div>
+
+    <script src="projek.js"></script>
+</body>
+</html>
