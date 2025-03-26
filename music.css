@@ -16,11 +16,10 @@ body {
     color: var(--text-color);
     display: flex;
     min-height: 100vh;
-    overflow-x: hidden;
 }
 
 .sidebar {
-    background: var(--secondary-bg);
+    background: var(--sidebar-bg);
     width: 250px;
     border-right: 1px solid var(--border-color);
     display: flex;
@@ -53,8 +52,7 @@ body {
 }
 
 .sidebar nav li:hover {
-    background: var(--accent-color);
-    color: #fff;
+    background: var(--hover-color);
     border-radius: var(--radius);
     padding-left: 10px;
     transition: all 0.3s ease;
@@ -68,7 +66,8 @@ body {
 main {
     flex: 1;
     padding: 20px;
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-header {
@@ -170,15 +169,20 @@ main {
     padding: 15px 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap;
 }
 
 #audio-player {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
+}
+
+.sub-menu {
+    display: none;
+    list-style: none;
+    margin-left: 20px;
+    padding: 5px 0;
 }
 
 .playlist-toggle {
@@ -199,44 +203,18 @@ main {
     transform: rotate(-180deg);
 }
 
-/* Responsive Design for Mobile Devices */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid var(--border-color);
-        padding: 10px;
-    }
+.playlist-menu li {
+    padding: 5px 0;
+    color: #555;
+}
 
-    .container {
-        flex-direction: column;
-    }
+.playlist-menu li:hover {
+    color: #000;
+    font-weight: bold;
+}
 
-    .playlist {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 15px;
-    }
-
-    .song img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .song-title {
-        font-size: 14px;
-    }
-
-    .song-artist {
-        font-size: 12px;
-    }
-
-    .play-button {
-        width: 35px;
-        height: 35px;
-        font-size: 16px;
-    }
-
-    .audio-player-container {
-        padding: 10px;
-    }
+/* Link Styling */
+a {
+    text-decoration: none;
+    color: inherit;
 }

@@ -159,3 +159,59 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* Sidebar responsif */
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding: 10px;
+    }
+
+    .sidebar header {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .sidebar nav li {
+        font-size: 14px;
+        padding: 8px 0;
+        text-align: center;
+    }
+
+    /* Main Content */
+    main {
+        padding: 10px;
+    }
+
+    .main-header {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Playlist Cards */
+    .playlists {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .playlist-card {
+        max-width: 150px;
+        padding: 10px;
+    }
+
+    .playlist-card img {
+        height: 120px;
+    }
+
+    .playlist-card p {
+        font-size: 14px;
+    }
+
+    /* Submenu */
+    .sub-menu {
+        margin-left: 0;
+    }
+}
