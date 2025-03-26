@@ -1,57 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="semuakansirna.css">
+    <title>Playlist Kelas</title>
+    <link rel="stylesheet" href="music.css">
 </head>
 <body>
-    <div class="playlist-container">
-        <h2>Daftar Lagu</h2>
+    <!-- Sidebar -->
+     <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <header>K Music</header>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>New</li>
+                    <li>Radio</li>
+                    <li>Library
+                        <ul class="sub-menu">
+                            <li>Recently Added</li>
+                            <li>Artists</li>
+                            <li>Albums</li>
+                            <li>Songs</li>
+                        </ul>
+                    </li>
+                    <li class="playlist-toggle">Playlists
+                        <ul class="sub-menu playlist-menu">
+                            <li > <a href="index.html">All Playlists</a></li>
+                            <li >Favourite Songs</li>
+                            <li><a href="music.html">Bego Kebangetan</a></li>
+                            <li><a href="semuakansirna.html">Semua Akan Sirna</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    <!-- Konten Utama -->
+    <main>
+        <div class="main-header">Daftar Lagu</div>
         
-        <input type="text" id="search-bar" placeholder="Cari lagu..." />
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Cari lagu..." />
+        </div>
 
+        <!-- Daftar Lagu -->
         <div class="playlist">
+            <!-- Lagu 1 -->
             <div class="song" data-src="Hindia  Janji Palsu Official Lyric Video.mp3">
                 <img src="kita kesana.jpeg" alt="Cover">
                 <div class="song-details">
-                    <div class="song-title">Janji Palsu</div>
-                    <div class="song-artist">Hindia - Lagi Pula Hidup Akan Berakhir</div>
+                    <div class="song-title">Ivy</div>
+                    <div class="song-artist">Hindia - lagi pula hidup akan berakhir juga</div>
                 </div>
-                <button class="play-button"><img src="play.ppg" alt="Play"></button>
+                <button class="play-button">▶</button>
             </div>
             
+            <!-- Lagu 2 -->
+            <div class="song" data-src="Hindia  Kita Ke Sana Official Music Video.mp3">
+                <img src="kita kesana.jpeg" alt="Cover">
+                <div class="song-details">
+                    <div class="song-title">Kita Ke sana</div>
+                    <div class="song-artist">Hindia - Lagi pula hidup akan berakhir</div>
+                </div>
+                <button class="play-button">▶</button>
+            </div>
+
+            <!-- Lagu 3 -->
             <div class="song" data-src="Hindia  Satu Hari Lagi Official Lyric Video.mp3">
                 <img src="kita kesana.jpeg" alt="Cover">
                 <div class="song-details">
-                    <div class="song-title">Satu Hari Lagi</div>
-                    <div class="song-artist">Hindia - Lagi Pula Hidup Akan Berakhir</div>
+                    <div class="song-title">Satu hari lagi</div>
+                    <div class="song-artist">Hindia - lagi pula hidup akan berakhir</div>
                 </div>
-                <button class="play-button"><img src="play.png" alt="Play"></button>
+                <button class="play-button">▶</button>
             </div>
 
-            <div class="song" data-src="kita kesana.jpeg">
-                <img src="kita kesana.jpeg" alt="Cover">
-                <div class="song-details">
-                    <div class="song-title">Kita Kesana</div>
-                    <div class="song-artist">Hindia - Kita Kesana</div>
-                </div>
-                <button class="play-button"><img src="play.png" alt="Play"></button>
-            </div>
-
+            <!-- Lagu 4 -->     
             <div class="song" data-src="Hindia  Secukupnya Official Lyric  Commentary Video.mp3">
                 <img src="menari dengan bayangan.jpeg" alt="Cover">
                 <div class="song-details">
                     <div class="song-title">Secukupnya</div>
-                    <div class="song-artist">Hindia - Menari Dengan Bayangan</div>
+                    <div class="song-artist">hindia - menari dengan bayangan</div>
                 </div>
-                <button class="play-button"><img src="play.png" alt="Play"></button>
+                <button class="play-button">▶</button>
             </div>
-        </div>
-    </div>
 
-    <!-- Audio Player Tetap di Bawah -->
+           
+        </div>
+    </main>
+
+    <!-- Pemutar Audio Tetap -->
     <div class="audio-player-container">
         <audio id="audio-player" controls></audio>
     </div>

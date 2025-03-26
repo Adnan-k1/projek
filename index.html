@@ -3,31 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Playlists</title>
+    <title>Apple Music Clone</title>
     <link rel="stylesheet" href="playlist.css">
 </head>
 <body>
-
-    <header>
-        <h1>🎵 My Playlists</h1>
-    </header>
-
-    <main>
-        <h2>Your Favorite Playlists</h2>
-        <div class="playlist-container">    
-            <div class="playlist-card" onclick="window.location.href='music.html'">
-                <img src="begokebangetan.jpg" alt="Bego Kebangetan">
-                <p>Bego Kebangetan</p>
-            </div>
-
-            <div class="playlist-card" onclick="window.location.href='music.html'">
-                <img src="semua akan sirna.jpg" alt="semua akan sirna">
-                <p>Semua akan sirna</p>
-            </div>
-
-           
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <header>K Music</header>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>New</li>
+                    <li>Radio</li>
+                    <li>Library
+                        <ul class="sub-menu">
+                            <li>Recently Added</li>
+                            <li>Artists</li>
+                            <li>Albums</li>
+                            <li>Songs</li>
+                        </ul>
+                    </li>
+                    <li class="playlist-toggle">Playlists
+                        <ul class="sub-menu playlist-menu">
+                            <li >All Playlists</li>
+                            <li >Favourite Songs</li>
+                            <li><a href="music.html">Bego Kebangetan</a></li>
+                            <li><a href="semuakansirna.html">Semua Akan Sirna</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </main>
 
+
+        <!-- Main Content -->
+        <main>
+            <header class="main-header">
+                <h1>All Playlists</h1>
+            </header>
+            <section class="playlists">
+                <div class="playlist-card" onclick="window.location.href='music.html'" >
+                    <img src="begokebangetan.jpg" alt="Bego Kebangetan" >
+                    <p>Bego Kebangetan</p>
+                   
+                </div>
+                <div class="playlist-card" onclick="window.location.href='semuakansirna.html'">
+                    <img src="semua akan sirna.jpg" alt="Semua Akan Sirna">
+                    <p>Semua Akan Sirna</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="playlist.js"></script>
 </body>
 </html>
